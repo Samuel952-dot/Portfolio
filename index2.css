@@ -1,0 +1,60 @@
+/* Basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.navmenu a, .signinbtns button {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 4px 0;
+}
+
+/* Mobile menu hidden by default */
+.mobile-menu {
+    display: none;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* Media queries for responsive navbar */
+@media screen and (max-width: 768px) {
+    .navmenu, .signinbtns {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu.show {
+        display: block;
+    }
+
+    .mobile-navmenu a, .mobile-navmenu button {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left section for the sign-up form -->
+        <div class="left-section">
+            <div class="form-container">
+                <h1>Fiber</h1>
+                <h2>Create your Fiber account</h2>
+
+                <form>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="John Doe">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="john@example.com">
+
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="At least 8 characters">
+                        <button type="button" class="toggle-password"></button>
+                    </div>
+
+                    <div class="terms">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">
+                            By creating an account on Fiber, you agree to the <a href="#">Terms & Conditions</a>.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Create Fiber Account</button>
+                </form>
+
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
+        </div>
+
+        <!-- Right section for the promotional banner -->
+        <div class="right-section">
+            <div class="promo-container">
+                <img src="Sign Up Image.png" alt="Promo image" class="promo-image">
+                <h3>Unparalleled Templates</h3>
+                <p>Crafted by a team of professional designers, our templates are unparalleled in the market.</p>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
