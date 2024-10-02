@@ -1,0 +1,378 @@
+/* Base Styles */
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #fff;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar .navmenu a {
+    font-weight: 500;
+}
+
+.navbar .navmenu a:hover{
+    color: white;
+    border: 1px solid #6B46C1;
+    background-color: #4A3FBD;
+    padding: 10px 20px;
+}
+
+.navbar .signin {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar .signup {
+    background-color: #6B46C1;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    background-color: #F8F8F8;
+}
+
+.hero .left-column {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .buttons .primary-btn {
+    background-color: #6B46C1;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero .buttons .secondary-btn {
+    background-color: transparent;
+    color: #6B46C1;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 2px solid #6B46C1;
+    cursor: pointer;
+}
+
+.hero .review {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero .review .stars {
+    color: #FFD700;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.hero .right-column img {
+    width: 500px;
+    height: auto;
+}
+
+/* Why Fiber Section */
+.why-fiber {
+    text-align: center;
+    padding: 60px 80px;
+    background-color: white;
+}
+
+.why-fiber h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.why-fiber .features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.why-fiber .features .feature {
+    max-width: 30%;
+    text-align: center;
+}
+
+.why-fiber .features .feature img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.why-fiber .features .feature h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.why-fiber .features .feature p {
+    color: #555;
+}
+
+/* Diversify Section */
+.diversify {
+    background-image: linear-gradient(to right, #6B46C1, #4A3FBD);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    border-radius: 10px;
+}
+
+.diversify .text {
+    max-width: 50%;
+}
+
+.diversify h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.diversify p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.diversify .start-btn {
+    background-color: white;
+    color: #6B46C1;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.diversify img {
+    max-width: 50%;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 80px;
+    background-color: white;
+    display:flex ;
+    justify-content: space-between;
+}
+
+.testimonial-card {
+    background-color: #F8F8F8;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 30%;
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .view-portfolio-btn {
+    background-color: transparent;
+    border: 2px solid #6B46C1;
+    color: #6B46C1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #F1F1F1;
+    padding: 60px 80px;
+}
+
+footer .footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    /* Stack hero text and image */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        max-width: 100%;
+    }
+    
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    /* Stack features vertically */
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Stack testimonial cards vertically */
+    .testimonials {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        max-width: 100%;
+    }
+
+    /* Make footer columns stack */
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links ul {
+        text-align: center;
+    }
+}
+
+/* Basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.navmenu a, .signinbtns button {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 4px 0;
+}
+
+/* Mobile menu hidden by default */
+.mobile-menu {
+    display: none;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* Media queries for responsive navbar */
+@media screen and (max-width: 768px) {
+    .navmenu, .signinbtns {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu.show {
+        display: block;
+    }
+
+    .mobile-navmenu a, .mobile-navmenu button {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+   
+
+
+
+
